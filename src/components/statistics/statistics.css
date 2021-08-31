@@ -1,8 +1,12 @@
 .Statistics__list {
   display: flex;
   justify-content: space-evenly;
-  border-top: 2px solid grey;
-  background: linear-gradient(45deg, rgb(176, 176, 192), rgb(122, 141, 228));
+  border-top: 2px solid var(--table-border-color);
+  background: linear-gradient(
+    45deg,
+    var(--light-gradient-color),
+    var(--dark-gradient-color)
+  );
 }
 
 .Statistics__item {
@@ -12,15 +16,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid grey;
-  box-shadow: 1px 2px 3px rgb(51, 48, 48);
+  border: 1px solid var(--table-border-color);
+  box-shadow: 1px 2px 3px var(--table-border-color);
 }
 
 .Statistics__label {
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  color: rgb(7, 7, 26, 0.5);
+  color: var(--dark-text-color);
 }
 
 .Statistics__percentage {
@@ -28,5 +32,5 @@
   font-size: 15px;
   font-weight: 600;
   margin-top: 10px;
-  color: rgb(7, 7, 26, 0.8);
+  color: var(--darkest-text-color);
 }

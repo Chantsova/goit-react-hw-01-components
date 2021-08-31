@@ -1,33 +1,36 @@
 .FriendsList {
-  background: linear-gradient(45deg, rgb(166, 166, 192), rgb(122, 141, 228));
+  background: linear-gradient(
+    45deg,
+    var(--light-gradient-color),
+    var(--dark-gradient-color)
+  );
 }
 
 .FriendsList__item {
   display: flex;
   align-items: center;
   padding: 5px 10px;
-  border: 1px solid grey;
-  box-shadow: 1px 2px 3px rgb(51, 48, 48);
+  border: 1px solid var(--table-border-color);
 }
 
 .FriendsList__status {
   font-size: 50px;
-  color: rgb(226, 155, 155);
+  color: var(--offline-color);
   margin-right: 20px;
 }
 
 .FriendsList__status.is-online {
-  color: rgb(98, 145, 98);
+  color: var(--online-color);
 }
 
 .FriendsList__avatar {
-  border: 2px solid rgb(32, 31, 31, 0.5);
+  border: 2px solid var(--darkest-text-color);
   border-radius: 20px;
-  background-color: rgb(217, 217, 245);
+  background-color: var(--background-avatar-color);
 }
 
 .FriendsList__name {
   margin-left: 30px;
   font-size: 20px;
-  color: rgb(32, 31, 31, 0.9);
+  color: var(--darkest-text-color);
 }

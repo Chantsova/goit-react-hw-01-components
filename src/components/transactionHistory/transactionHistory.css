@@ -4,23 +4,23 @@
 }
 
 .TransactionHistory__header {
-  background-color: rgb(119, 135, 180, 0.8);
+  background-color: var(--table-header-color);
 }
 
 .TransactionHistory td,
 .TransactionHistory th {
-  border: 1px solid rgb(82, 78, 78, 0.8);
+  border: 1px solid var(--table-border-color);
   padding: 8px;
 }
 
 .TransactionHistory tr:nth-child(even) {
-  background-color: rgba(199, 211, 245, 0.8);
+  background-color: var(--table-background-color);
 }
 
 .TransactionHistory__type {
   font-size: 16px;
   font-weight: bold;
-  color: rgba(24, 31, 49, 0.8);
+  color: var(--darkest-text-color);
 }
 
 .TransactionHistory__count {
